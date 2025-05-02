@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'employe',
     'rest_framework_simplejwt',
-     'corsheaders'
+     'corsheaders',
      'django-cors-headers',
 ]
 
