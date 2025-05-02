@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'employe',
     'rest_framework_simplejwt',
      'corsheaders'
+     'django-cors-headers',
 ]
 
 MIDDLEWARE = [
