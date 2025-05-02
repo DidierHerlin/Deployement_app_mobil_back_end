@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+import dj_database_url
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -32,6 +35,7 @@ CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOW_ALL_ORIGINS = True
 # Application definition
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -102,17 +106,17 @@ WSGI_APPLICATION = 'gestion_employe.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'projetMobil',
-        'USER': 'postgres',
-        'PASSWORD': 'didierherlin',
-        'HOST': 'localhost',
+        'NAME': 'employer_zfnr',
+        'USER': 'root',
+        'PASSWORD': '7P5aIFdINXPR0ccHu6A68Ods7loIqG8x',
+        'HOST': 'dpg-d0acm6hr0fns73ferdq0-a',
         'PORT': '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
