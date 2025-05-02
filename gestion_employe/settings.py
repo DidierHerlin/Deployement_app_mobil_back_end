@@ -44,8 +44,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'employe',
     'rest_framework_simplejwt',
-     'corsheaders',
-     'django-cors-headers',
+    'corsheaders',  # Gardez uniquement cette entrée pour django-cors-headers
 ]
 
 MIDDLEWARE = [
