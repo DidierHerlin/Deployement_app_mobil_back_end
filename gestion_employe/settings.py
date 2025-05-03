@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 import dj_database_url
-
+import os
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -108,14 +108,9 @@ WSGI_APPLICATION = 'gestion_employe.wsgi.application'
 
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'employer_zfnr',
-        'USER': 'root',
-        'PASSWORD': '7P5aIFdINXPR0ccHu6A68Ods7loIqG8x',
-        'HOST': 'dpg-d0acm6hr0fns73ferdq0-a',
-        'PORT': '5432',
-    }
+    'default': dj_database_url.config(
+        default='postgresql://root:7P5aIFdINXPR0ccHu6A68Ods7loIqG8x@dpg-d0acm6hr0fns73ferdq0-a/employer_zfnr'
+    )
 }
 
 # Password validation
