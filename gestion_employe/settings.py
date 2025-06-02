@@ -109,7 +109,7 @@ WSGI_APPLICATION = 'gestion_employe.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.parse(
-        'postgresql://root:7P5aIFdINXPR0ccHu6A68Ods7loIqG8x@dpg-d0acm6hr0fns73ferdq0-a.oregon-postgres.render.com/employer_zfnr'
+        'postgres://avnadmin:AVNS_I0-uPXlwlxazhuO5ik8@pg-gestion-employer-didierherlin18.j.aivencloud.com:13360/defaultdb?sslmode=require'
     )
 }
 
